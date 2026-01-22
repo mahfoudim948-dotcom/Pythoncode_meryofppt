@@ -1,0 +1,99 @@
+:root{
+    --bg-light:very light gray blue;
+    --bg-blue:#e4ecf7;
+    --primary:#4a6cf7;
+    --primary-dark:#3b5bdb;
+    --text-dark:#2c3e50;
+    --text-muted:#6b7280;
+    --white:#ffffff;
+    --radius: 14px;
+}
+*{box-sizing: border-box;margin: 0;padding: auto;}
+body{
+    font-family: 'poppins',sans-serif;
+    background: -moz-linear-gradient(180deg,var(--bg-light),var(--bg-blue));
+    min-height: 100vh;
+    color: var(--text-dark);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+nav a{
+    margin-left: 24px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+nav a:hover{color: var(--primary);}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 8%;
+    align-items: center;
+}
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero p{
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.btn{
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    background: var(--primary-dark) ;
+    transform: translateY(-2px);
+}
+.hero-card{
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.features{
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+.feature{
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+.feature h3{margin-bottom: 10px;}
+.feature p{
+    color: var(--text-muted);
+    font-size: 14px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+@media (max-width: 90px){
+    .hero {grid-template-columns: 1fr;text-align: center;}
+    nav{display: none;}
+}
