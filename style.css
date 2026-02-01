@@ -1,0 +1,188 @@
+/* ================== VARIABLES ================== */
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #020617;
+  --bg-header: #020617;
+  --bg-nav: #020617;
+
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+
+  --border-color: #1e293b;
+}
+
+/* ================== GLOBAL ================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* ================== HEADER ================== */
+header {
+  background-color: var(--bg-header);
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 2.2rem;
+}
+
+header p {
+  color: var(--text-muted);
+}
+
+/* ================== NAVIGATION ================== */
+nav {
+  background-color: var(--bg-nav);
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent-hover);
+}
+
+/* ================== SECTIONS ================== */
+section {
+  background-color: var(--bg-card);
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 900px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+/* ================== TITRES ================== */
+h2, h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+/* ================== FORMULAIRES ================== */
+form {
+  max-width: 600px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ================== BOUTONS ================== */
+input[type="submit"],
+button {
+  background-color: var(--accent);
+  color: #020617;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* ================== ARTICLES (COMMUNAUTÉ) ================== */
+article {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+article p {
+  margin: 8px 0;
+}
+
+/* ================== LISTES ================== */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ================== HR ================== */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 30px 0;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background-color: var(--bg-header);
+  text-align: center;
+  padding: 15px;
+  color: var(--text-muted);
+  font-size: 14px;
+  border-top: 1px solid var(--border-color);
+}
+header {
+  position: relative; /* pour que le logo puisse se placer relativement */
+  background-color: var(--bg-header);
+  padding: 15px 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  position: absolute; /* position fixe dans le header */
+  top: 10px;          /* distance du haut */
+  left: 10px;         /* distance du côté gauche */
+  width: 50px;        /* petite taille */
+  height: auto;
+}
+
