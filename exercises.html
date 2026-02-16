@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MindTrack | Exercices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="brain.jpeg" type="image/x-icon">
+<link rel="apple-touch-icon" href="brain.png">
+
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="MindTrack Logo">
+        <span>MindTrack</span>
+    </a>
+<h1>MindTrack</h1>
+        <p>Apprends la programmation. Suis tes progrès. Code chaque jour.</p>
+        
+    <nav>
+        <a href="index.html">Accueil</a>|
+        <a href="courses.html">Cours</a>|
+        <a href="journal.html">Journal</a>|
+        <a href="exercises.html" class="active">Exercices</a>|
+        <a href="progress.html">Progression</a>
+    </nav>
+</header>
+
+<main class="exercises-page">
+    <h1 >📝 Exercices de programmation</h1>
+
+    <section class="exercise-card reveal">
+        <h2>Exercice 1 : Addition</h2>
+        <p>Écris une fonction <code>add(a, b)</code> qui retourne la somme de deux nombres.</p>
+
+        <textarea id="userAnswer1" placeholder="Écris ton code ici..." rows="5"></textarea>
+        <button onclick="checkAnswer1()">Vérifier</button>
+        <p class="feedback" id="feedback1"></p>
+    </section>
+
+    <section class="exercise-card reveal">
+        <h2>Exercice 2 : Salut Utilisateur</h2>
+        <p>Écris une fonction <code>greet(name)</code> qui retourne <code>"Bonjour, [name]!"</code>.</p>
+
+        <textarea id="userAnswer2" placeholder="Écris ton code ici..." rows="5"></textarea>
+        <button onclick="checkAnswer2()">Vérifier</button>
+        <p class="feedback" id="feedback2"></p>
+    </section>
+    <section class="exercise-card reveal">
+    <h2>Exercice 3 : Multiplication</h2>
+    <p>Écris une fonction <code>multiply(a, b)</code> qui retourne le produit de deux nombres.</p>
+    <textarea id="userAnswer3" placeholder="Écris ton code ici..." rows="5"></textarea>
+    <button onclick="checkAnswer3()">Vérifier</button>
+    <p class="feedback" id="feedback3"></p>
+</section>
+
+<section class="exercise-card reveal">
+    <h2>Exercice 4 : Vérifier pair/impair</h2>
+    <p>Écris une fonction <code>isEven(n)</code> qui retourne <code>true</code> si le nombre est pair, sinon <code>false</code>.</p>
+    <textarea id="userAnswer4" placeholder="Écris ton code ici..." rows="5"></textarea>
+    <button onclick="checkAnswer4()">Vérifier</button>
+    <p class="feedback" id="feedback4"></p>
+</section>
+
+<section class="exercise-card reveal">
+    <h2>Exercice 5 : Compter les voyelles</h2>
+    <p>Écris une fonction <code>countVowels(str)</code> qui retourne le nombre de voyelles dans une chaîne de caractères.</p>
+    <textarea id="userAnswer5" placeholder="Écris ton code ici..." rows="5"></textarea>
+    <button onclick="checkAnswer5()">Vérifier</button>
+    <p class="feedback" id="feedback5"></p>
+</section>
+
+<section class="exercise-card reveal">
+    <h2>Exercice 6 : Inverser un mot</h2>
+    <p>Écris une fonction <code>reverseWord(word)</code> qui retourne le mot inversé.</p>
+    <textarea id="userAnswer6" placeholder="Écris ton code ici..." rows="5"></textarea>
+    <button onclick="checkAnswer6()">Vérifier</button>
+    <p class="feedback" id="feedback6"></p>
+</section>
+
+<section class="exercise-card reveal">
+    <h2>Exercice 7 : Maximum d’un tableau</h2>
+    <p>Écris une fonction <code>maxArray(arr)</code> qui retourne le plus grand nombre d’un tableau.</p>
+    <textarea id="userAnswer7" placeholder="Écris ton code ici..." rows="5"></textarea>
+    <button onclick="checkAnswer7()">Vérifier</button>
+    <p class="feedback" id="feedback7"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 MindTrack – Learn to Code</p>
+</footer>
+
+<script src="verification.js"></script>
+
+
+
+</body>
+</html>
