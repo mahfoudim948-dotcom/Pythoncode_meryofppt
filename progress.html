@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Progression - MindTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📈 Ma Progression</h1>
+</header>
+
+<section class="progress-container">
+
+    <!-- Mode Public / Privé -->
+    <div class="privacy-box">
+        <label>
+            <input type="checkbox" id="privacyToggle">
+            Rendre ma progression publique
+        </label>
+    </div>
+
+    <!-- Barre de progression -->
+    <div class="progress-box">
+        <h2>Progression Globale</h2>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p id="progressText">0%</p>
+    </div>
+
+    <!-- Points forts -->
+    <div class="strength-box">
+        <h2>💪 Mes Points Forts</h2>
+        <ul id="strengthList"></ul>
+    </div>
+
+    <!-- Statistiques -->
+    <div class="stats-box">
+        <h2>📊 Activité Hebdomadaire</h2>
+        <p id="weeklyStats"></p>
+    </div>
+
+    <!-- Calendrier -->
+    <div class="calendar-box">
+        <h2>📅 Calendrier de progression</h2>
+        <div id="calendar"></div>
+    </div>
+
+</section>
+
+<script src="progress.js"></script>
+</body>
+</html>
